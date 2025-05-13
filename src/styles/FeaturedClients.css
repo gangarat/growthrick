@@ -1,5 +1,5 @@
 .featured-clients {
-  padding: 3rem 1.25rem;
+  padding: 2rem 1.25rem;
   background-color: white;
 }
 
@@ -10,9 +10,8 @@
 }
 
 .featured-clients h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #1a0f4f;
-  margin: 0 auto 2rem;
   font-weight: 700;
   line-height: 1.2;
   text-align: center;

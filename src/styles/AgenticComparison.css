@@ -1,5 +1,5 @@
 .agentic-comparison {
-  padding: 3rem 0;
+  padding: 1rem;
   background-color: #f9fafb;
 }
 
@@ -49,7 +49,6 @@
 }
 
 .comparison-card {
-  margin-bottom: 1.5rem;
   padding: 1.25rem;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.7);
@@ -71,6 +70,7 @@
   color: #4b5563;
   line-height: 1.6;
   font-size: 0.95rem;
+  margin-bottom: 0;
 }
 
 /* Responsive Design */
