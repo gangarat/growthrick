@@ -1,12 +1,7 @@
-/* Case Studies Page */
-.case-studies-page {
-  padding: 0 0 6rem;
-}
-
 /* Hero Section */
 .case-studies-hero {
   background: linear-gradient(135deg, #f9f5ff 0%, #f0e9ff 100%);
-  padding: 8rem 0 6rem;
+  padding: 2rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -15,7 +10,7 @@
 .case-studies-hero h1 {
   font-size: 3.5rem;
   color: #2d1a69;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-weight: 800;
 }
 
@@ -29,7 +24,7 @@
 
 /* Case Studies List */
 .case-studies-list {
-  padding: 6rem 0;
+  padding: 2rem 0;
   background-color: #fff;
 }
 
@@ -37,7 +32,7 @@
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #f0e9ff;
@@ -49,14 +44,14 @@
 }
 
 .case-study-content {
-  padding: 3rem;
+  padding: 2rem 3rem;
 }
 
 .case-study-card h2 {
   color: #4c1d95;
   font-size: 2rem;
-  margin-bottom: 2rem;
-  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid #f0e9ff;
   position: relative;
 }
@@ -73,7 +68,7 @@
 }
 
 .case-study-section {
-  margin-bottom: 2.5rem;
+  margin-bottom: 0;
 }
 
 .case-study-section h3 {
