@@ -1,7 +1,30 @@
 .what-we-do {
-  padding: 5rem 2rem;
+  padding: 3rem 1.25rem;
   background-color: #f9f9f9;
   text-align: center;
+}
+
+.what-we-do h2 {
+  margin: 0 auto 2rem;
+  max-width: 1000px;
+  width: 100%;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+  font-size: 2.2rem;
+  color: #1a0f4f;
+  line-height: 1.2;
+}
+
+.what-we-do h3 {
+  margin: 0 auto 1.5rem;
+  max-width: 800px;
+  width: 100%;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+  font-size: 1.25rem;
+  color: #4a5568;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .what-we-do .container {

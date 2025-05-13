@@ -1,0 +1,89 @@
+.agentic-comparison {
+  padding: 3rem 0;
+  background-color: #f9fafb;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 0 auto 1.5rem;
+  color: #1f2937;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.comparison-column {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.ai-column {
+  background: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.column-title {
+  font-size: 1.1rem;
+  color: #1e40af;
+  margin: 0 auto 1rem;
+  padding: 0 0 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.comparison-card {
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.7);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.comparison-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.comparison-card h4 {
+  color: #1e40af;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.comparison-card p {
+  color: #4b5563;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .column-title {
+    font-size: 1.3rem;
+  }
+}

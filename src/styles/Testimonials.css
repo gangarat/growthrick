@@ -1,6 +1,6 @@
 .testimonials {
-  padding: 5rem 2rem;
-  background-color: #f9f9f9;
+  padding: 3rem 1.25rem;
+  background-color: #f8f9fa;
 }
 
 .testimonials .container {
@@ -10,10 +10,16 @@
 }
 
 .testimonials h2 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 3rem;
-  font-weight: 600;
+  font-size: 2.2rem;
+  color: #1a0f4f;
+  margin: 0 auto 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  max-width: 1000px;
+  width: 100%;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
 }
 
 .testimonials-grid {

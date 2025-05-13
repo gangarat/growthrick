@@ -176,11 +176,10 @@
 .section-title {
   text-align: center;
   color: #2d1a69;
-  font-size: 2.25rem;
-  margin-bottom: 3rem;
+  font-size: 2rem;
   position: relative;
   display: inline-block;
-  left: 50%;
+  left: 40%;
   transform: translateX(-50%);
 }
 

@@ -1,5 +1,7 @@
 import Hero from '../components/Hero';
 import WhatWeDo from '../components/WhatWeDo';
+import AgenticComparison from '../components/AgenticComparison';
+import AIRevolution from '../components/AIRevolution';
 import OurApproach from '../components/OurApproach';
 import Results from '../components/Results';
 import FeaturedClients from '../components/FeaturedClients';
@@ -12,6 +14,8 @@ const Home = () => {
     <>
       <Hero />
       <WhatWeDo />
+      <AgenticComparison />
+      <AIRevolution />
       <OurApproach />
       <Results />
       <FeaturedClients />
