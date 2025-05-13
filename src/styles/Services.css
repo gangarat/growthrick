@@ -1,0 +1,256 @@
+/* Services Page */
+.services-page {
+  padding: 0 0 6rem;
+}
+
+/* Hero Section */
+.services-hero {
+  background: linear-gradient(135deg, #f9f5ff 0%, #f0e9ff 100%);
+  padding: 8rem 0 6rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-hero h1 {
+  font-size: 3.5rem;
+  color: #2d1a69;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+
+.services-hero .subtitle {
+  font-size: 1.25rem;
+  color: #4a3f6a;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Services List */
+.services-list {
+  padding: 6rem 0;
+  background-color: #fff;
+}
+
+.service-category {
+  margin-bottom: 6rem;
+  position: relative;
+}
+
+.service-category:last-child {
+  margin-bottom: 0;
+}
+
+.service-category-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-category h2 {
+  color: #4c1d95;
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.service-category h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #8b5cf6;
+  border-radius: 2px;
+}
+
+.category-description {
+  font-size: 1.1rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-top: 1.5rem;
+}
+
+.service-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.service-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0e9ff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.service-item h3 {
+  color: #5b21b6;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.service-item h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: #c4b5fd;
+  border-radius: 2px;
+}
+
+.service-item p {
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f9f5ff 0%, #f0e9ff 100%);
+}
+
+.cta-section h2 {
+  color: #2d1a69;
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  color: #4a3f6a;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #6d28d9;
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(109, 40, 217, 0.2);
+}
+
+.cta-button:hover {
+  background: #5b21b6;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(109, 40, 217, 0.3);
+}
+
+/* Alternating Layout */
+.service-category.left .service-items {
+  direction: rtl;
+}
+
+.service-category.left .service-item {
+  direction: ltr;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .services-hero {
+    padding: 6rem 0 4rem;
+  }
+  
+  .services-hero h1 {
+    font-size: 2.75rem;
+  }
+  
+  .services-list {
+    padding: 4rem 0;
+  }
+  
+  .service-category {
+    margin-bottom: 5rem;
+  }
+  
+  .service-category-header {
+    margin-bottom: 3rem;
+  }
+  
+  .service-category h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-hero {
+    padding: 5rem 0 3rem;
+  }
+  
+  .services-hero h1 {
+    font-size: 2.25rem;
+  }
+  
+  .services-hero .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .services-list {
+    padding: 3rem 0;
+  }
+  
+  .service-category {
+    margin-bottom: 4rem;
+  }
+  
+  .service-category h2 {
+    font-size: 1.75rem;
+  }
+  
+  .category-description {
+    font-size: 1rem;
+  }
+  
+  .service-item {
+    padding: 1.75rem;
+  }
+  
+  .service-items {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Reset alternating layout on mobile */
+  .service-category.left .service-items,
+  .service-category.left .service-item {
+    direction: ltr;
+  }
+  
+  .cta-section {
+    padding: 4rem 0;
+  }
+  
+  .cta-section h2 {
+    font-size: 1.75rem;
+  }
+  
+  .cta-section p {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,124 @@
+.leadership {
+  padding: 5rem 2rem;
+  background-color: white;
+}
+
+.leadership .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leadership h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.leadership-profile {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.leadership-logo {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.profile-photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #9333EA;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+  text-align: left;
+}
+
+.profile-info h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.profile-info h4 {
+  font-size: 1.2rem;
+  color: #9333EA;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.profile-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  margin-top: 1.5rem;
+}
+
+.linkedin-link {
+  display: inline-flex;
+  align-items: center;
+  background-color: #0077b5;
+  color: white !important;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  gap: 8px;
+}
+
+.linkedin-icon {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.linkedin-link span {
+  color: white !important;
+}
+
+.linkedin-link:hover {
+  background-color: #005fa3;
+}
+
+@media (max-width: 768px) {
+  .leadership {
+    padding: 4rem 1rem;
+  }
+  
+  .leadership h2 {
+    font-size: 2rem;
+  }
+  
+  .leadership-profile {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .profile-image-placeholder {
+    width: 200px;
+    height: 200px;
+  }
+}

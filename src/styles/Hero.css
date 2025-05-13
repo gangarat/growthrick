@@ -1,0 +1,65 @@
+.hero {
+  background-color: #333;
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: white;
+  text-align: center;
+}
+
+.hero-subheadline {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.hero .schedule-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #9333EA;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.hero .schedule-btn svg {
+  margin-left: 0.5rem;
+}
+
+.hero .schedule-btn:hover {
+  background-color: #7928CA;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero {
+    padding: 4rem 1rem;
+  }
+}

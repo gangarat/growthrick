@@ -1,0 +1,132 @@
+.integration {
+  background-color: #f9f5ff;
+  padding: 5rem 0;
+}
+
+.integration h2 {
+  color: #2d1a69;
+  margin-bottom: 3.5rem;
+}
+
+.integration-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.integration-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.integration-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2.5rem;
+  height: 100%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0e9ff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.integration-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.integration-card h3 {
+  color: #5b21b6;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.integration-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #8b5cf6;
+  border-radius: 2px;
+}
+
+.integration-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.integration-list li {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.integration-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #8b5cf6;
+  font-weight: bold;
+}
+
+.integration-list li strong {
+  color: #2d1a69;
+  font-weight: 600;
+}
+
+.integration-visual {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.integration-visual-placeholder {
+  background: linear-gradient(145deg, #f0ebff 0%, #e0d6ff 100%);
+  border-radius: 12px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7c6ab8;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: 2px dashed #c4b5fd;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .integration {
+    padding: 4rem 0;
+  }
+  
+  .integration-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .integration-card {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .integration {
+    padding: 3rem 0;
+  }
+  
+  .integration-card h3 {
+    font-size: 1.3rem;
+  }
+  
+  .integration-visual-placeholder {
+    height: 200px;
+  }
+}

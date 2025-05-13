@@ -1,0 +1,77 @@
+.our-approach {
+  padding: 5rem 2rem;
+  background-color: white;
+}
+
+.our-approach .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.our-approach h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.our-approach .section-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.approach-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.platform-info h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.platform-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.platform-visual-placeholder {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 1.2rem;
+  border: 2px dashed #ccc;
+}
+
+@media (max-width: 768px) {
+  .our-approach {
+    padding: 4rem 1rem;
+  }
+  
+  .our-approach h2 {
+    font-size: 2rem;
+  }
+  
+  .approach-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .platform-visual-placeholder {
+    height: 200px;
+    margin-top: 2rem;
+  }
+}
