@@ -1,6 +1,6 @@
 .platform-overview {
   background: linear-gradient(135deg, #f8f5ff 0%, #f0ebff 100%);
-  padding: 6rem 0;
+  padding: 1rem 0;
 }
 
 .platform-overview h1 {
@@ -14,7 +14,7 @@
   text-align: center;
   font-size: 1.25rem;
   max-width: 800px;
-  margin: 0 auto 3rem;
+  margin: 0 auto 2rem;
   color: #4a3f6a;
 }
 
@@ -61,26 +61,6 @@
   line-height: 1.5;
 }
 
-.platform-visual {
-  margin-top: 4rem;
-  text-align: center;
-}
-
-.platform-visual-placeholder {
-  background: linear-gradient(145deg, #f0ebff 0%, #e0d6ff 100%);
-  border-radius: 12px;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #7c6ab8;
-  font-size: 1.2rem;
-  font-weight: 500;
-  border: 2px dashed #c4b5fd;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
 /* Responsive Design */
 @media (max-width: 1024px) {
   .platform-overview {
@@ -89,10 +69,6 @@
   
   .models-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .platform-visual-placeholder {
-    height: 300px;
   }
 }
 
@@ -103,9 +79,5 @@
   
   .models-grid {
     grid-template-columns: 1fr;
-  }
-  
-  .platform-visual-placeholder {
-    height: 250px;
   }
 }

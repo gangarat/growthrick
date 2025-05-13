@@ -1,6 +1,49 @@
 import '../../styles/platform/CoreRoles.css';
 
 const CoreRoles = () => {
+  const roles = [
+    {
+      id: 1,
+      title: 'Market Insights Specialist',
+      items: [
+        'Market research and buyer behavior analysis',
+        'Trend identification and opportunity mapping',
+        'Competitive landscape assessment',
+        'Buyer journey analysis'
+      ]
+    },
+    {
+      id: 2,
+      title: 'Content Strategist',
+      items: [
+        'Brand voice development and consistency',
+        'Thought leadership development',
+        'Multimedia content planning',
+        'Solution storytelling and narrative development'
+      ]
+    },
+    {
+      id: 3,
+      title: 'Growth Marketer',
+      items: [
+        'Channel strategy and optimization',
+        'Performance marketing management',
+        'Budget allocation and ROAS optimization',
+        'A/B testing and experimentation'
+      ]
+    },
+    {
+      id: 4,
+      title: 'Demand Generation Designer',
+      items: [
+        'Personalization strategy implementation',
+        'Lead generation optimization',
+        'Conversion rate optimization',
+        'Lead nurturing and pipeline acceleration'
+      ]
+    }
+  ];
+
   return (
     <section className="core-roles">
       <div className="container">
@@ -11,57 +54,19 @@ const CoreRoles = () => {
         </p>
         
         <div className="roles-grid">
-          <div className="role-card">
-            <div className="role-number">1</div>
-            <div className="role-content">
-              <h3>Market Insights Specialist</h3>
-              <ul>
-                <li>Market research and buyer behavior analysis</li>
-                <li>Trend identification and opportunity mapping</li>
-                <li>Competitive landscape assessment</li>
-                <li>Buyer journey analysis</li>
-              </ul>
+          {roles.map((role) => (
+            <div className="role-card" key={role.id}>
+              <div className="role-number">{role.id}</div>
+              <div className="role-content">
+                <h3>{role.title}</h3>
+                <ul>
+                  {role.items.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
-          
-          <div className="role-card">
-            <div className="role-number">2</div>
-            <div className="role-content">
-              <h3>Content Strategist</h3>
-              <ul>
-                <li>Brand voice development and consistency</li>
-                <li>Thought leadership development</li>
-                <li>Multimedia content planning</li>
-                <li>Solution storytelling and narrative development</li>
-              </ul>
-            </div>
-          </div>
-          
-          <div className="role-card">
-            <div className="role-number">3</div>
-            <div className="role-content">
-              <h3>Growth Marketer</h3>
-              <ul>
-                <li>Channel strategy and optimization</li>
-                <li>Performance marketing management</li>
-                <li>Budget allocation and ROAS optimization</li>
-                <li>A/B testing and experimentation</li>
-              </ul>
-            </div>
-          </div>
-          
-          <div className="role-card">
-            <div className="role-number">4</div>
-            <div className="role-content">
-              <h3>Demand Generation Designer</h3>
-              <ul>
-                <li>Personalization strategy implementation</li>
-                <li>Lead generation optimization</li>
-                <li>Conversion rate optimization</li>
-                <li>Lead nurturing and pipeline acceleration</li>
-              </ul>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

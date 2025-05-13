@@ -35,11 +35,7 @@ const PlatformOverview = () => {
           </div>
         </div>
         
-        <div className="platform-visual">
-          <div className="platform-visual-placeholder">
-            <span>AI Platform Architecture Visualization</span>
-          </div>
-        </div>
+
       </div>
     </section>
   );

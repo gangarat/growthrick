@@ -1,11 +1,11 @@
 .core-roles {
   background-color: white;
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 
 .roles-description {
   max-width: 800px;
-  margin: 0 auto 4rem;
+  margin: 0 auto;
   text-align: center;
   font-size: 1.1rem;
   color: #4b5563;
@@ -14,9 +14,13 @@
 
 .roles-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .role-card {
@@ -91,35 +95,39 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
   .core-roles {
-    padding: 4rem 0;
+    padding: 2rem 0;
   }
   
   .roles-grid {
-    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    padding: 0 1rem;
   }
   
   .role-card {
-    padding: 2rem 1.75rem;
+    padding: 1.5rem;
   }
 }
 
 @media (max-width: 768px) {
   .core-roles {
-    padding: 3rem 0;
+    padding: 1.5rem 0;
   }
   
   .roles-description {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font-size: 1rem;
+    padding: 0 1rem;
   }
   
   .roles-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
+    padding: 0 1rem;
   }
   
   .role-card {
-    padding: 1.75rem 1.5rem;
+    width: 100%;
+    margin: 0 auto;
   }
   
   .role-content h3 {

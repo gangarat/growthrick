@@ -133,54 +133,44 @@ const AgentCategories = () => {
     }
   };
   
+  // Function to determine grid columns based on number of agents
+  const getGridColumns = (agentCount) => {
+    if (agentCount <= 4) return 2; // 2x2 grid for 4 or fewer agents
+    if (agentCount === 5) return 3; // 2x3 grid (with one empty space) for 5 agents
+    return 3; // 3x3 grid for 6 or more agents
+  };
+
+  const currentCategory = categories[activeCategory];
+  const agentCount = currentCategory.agents.length;
+  const gridColumns = getGridColumns(agentCount);
+
   return (
     <section className="agent-categories">
       <div className="container">
         <h2>Key Agent Categories</h2>
         
         <div className="category-tabs">
-          <button 
-            className={`category-tab ${activeCategory === 'content' ? 'active' : ''}`}
-            onClick={() => setActiveCategory('content')}
-          >
-            Content Creation
-          </button>
-          <button 
-            className={`category-tab ${activeCategory === 'personalization' ? 'active' : ''}`}
-            onClick={() => setActiveCategory('personalization')}
-          >
-            Personalization
-          </button>
-          <button 
-            className={`category-tab ${activeCategory === 'insight' ? 'active' : ''}`}
-            onClick={() => setActiveCategory('insight')}
-          >
-            Customer Insight
-          </button>
-          <button 
-            className={`category-tab ${activeCategory === 'performance' ? 'active' : ''}`}
-            onClick={() => setActiveCategory('performance')}
-          >
-            Performance Marketing
-          </button>
-          <button 
-            className={`category-tab ${activeCategory === 'growth' ? 'active' : ''}`}
-            onClick={() => setActiveCategory('growth')}
-          >
-            Growth Optimization
-          </button>
-          <button 
-            className={`category-tab ${activeCategory === 'visual' ? 'active' : ''}`}
-            onClick={() => setActiveCategory('visual')}
-          >
-            Visual Content
-          </button>
+          {Object.entries(categories).map(([key, category]) => (
+            <button 
+              key={key}
+              className={`category-tab ${activeCategory === key ? 'active' : ''}`}
+              onClick={() => setActiveCategory(key)}
+            >
+              {category.title.split(' ')[0]} {/* Show just the first word */}
+            </button>
+          ))}
         </div>
         
         <div className="category-content">
-          <h3>{categories[activeCategory].title}</h3>
-          <div className="agents-grid">
-            {categories[activeCategory].agents.map((agent, index) => (
+          <h3>{currentCategory.title}</h3>
+          <div 
+            className="agents-grid"
+            style={{
+              '--agent-count': agentCount,
+              '--grid-columns': gridColumns
+            }}
+          >
+            {currentCategory.agents.map((agent, index) => (
               <div className="agent-card" key={index}>
                 <h4>{agent.name}</h4>
                 <p>{agent.description}</p>

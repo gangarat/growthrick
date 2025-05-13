@@ -1,18 +1,18 @@
 .integration {
   background-color: #f9f5ff;
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 
 .integration h2 {
   color: #2d1a69;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2rem;
 }
 
 .integration-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 .integration-column {
@@ -81,35 +81,16 @@
   font-weight: 600;
 }
 
-.integration-visual {
-  margin-top: 4rem;
-  text-align: center;
-}
-
-.integration-visual-placeholder {
-  background: linear-gradient(145deg, #f0ebff 0%, #e0d6ff 100%);
-  border-radius: 12px;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #7c6ab8;
-  font-size: 1.2rem;
-  font-weight: 500;
-  border: 2px dashed #c4b5fd;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
 /* Responsive Design */
 @media (max-width: 1024px) {
   .integration {
-    padding: 4rem 0;
+    padding: 2rem 0;
   }
   
   .integration-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    margin-bottom: 2rem;
   }
   
   .integration-card {
@@ -119,14 +100,10 @@
 
 @media (max-width: 768px) {
   .integration {
-    padding: 3rem 0;
+    padding: 1.5rem 0;
   }
   
   .integration-card h3 {
     font-size: 1.3rem;
-  }
-  
-  .integration-visual-placeholder {
-    height: 200px;
   }
 }

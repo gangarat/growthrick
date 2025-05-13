@@ -5,12 +5,9 @@
   font-size: 0.95rem;
   line-height: 1.6;
 }
-
-/* Footer Top */
-.footer-top {
-  padding: 5rem 0 3rem;
+.footer-top{
+  margin-top: 2rem;
 }
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -21,10 +18,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2.5rem;
-}
-
-.footer-widget {
-  margin-bottom: 2rem;
 }
 
 .widget-title {

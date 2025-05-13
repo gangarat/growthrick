@@ -1,6 +1,6 @@
 .agent-categories {
   background-color: white;
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 
 .category-tabs {
@@ -40,21 +40,37 @@
 .category-content {
   background: #faf9ff;
   border-radius: 12px;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
 .category-content h3 {
   color: #4c1d95;
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   font-size: 1.75rem;
 }
 
 .agents-grid {
+  --grid-columns: 2; /* Default to 2 columns */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(var(--grid-columns, 2), 1fr);
+  gap: 1.25rem;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Adjust grid for different agent counts */
+.agents-grid[style*="--agent-count: 5"] {
+  --grid-columns: 3;
+}
+
+.agents-grid[style*="--agent-count: 6"],
+.agents-grid[style*="--agent-count: 7"],
+.agents-grid[style*="--agent-count: 8"],
+.agents-grid[style*="--agent-count: 9"] {
+  --grid-columns: 3;
 }
 
 .agent-card {
@@ -87,17 +103,31 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
   .agent-categories {
-    padding: 4rem 0;
+    padding: 2rem 0;
   }
   
   .agents-grid {
-    grid-template-columns: repeat(2, 1fr);
+    --grid-columns: 2 !important; /* Force 2 columns on tablet */
+  }
+  
+  .agents-grid[style*="--agent-count: 5"] .agent-card:last-child {
+    grid-column: span 2; /* Make the last item span full width for 5 items */
+    max-width: 50%;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 768px) {
   .agent-categories {
-    padding: 3rem 0;
+    padding: 1.5rem 0;
+  }
+  
+  .agents-grid {
+    --grid-columns: 1 !important; /* Force 1 column on mobile */
+  }
+  
+  .agents-grid[style*="--agent-count: 5"] .agent-card:last-child {
+    max-width: 100%;
   }
   
   .category-tabs {

@@ -45,11 +45,7 @@ const Integration = () => {
           </div>
         </div>
         
-        <div className="integration-visual">
-          <div className="integration-visual-placeholder">
-            <span>Integration Architecture Diagram</span>
-          </div>
-        </div>
+
       </div>
     </section>
   );
