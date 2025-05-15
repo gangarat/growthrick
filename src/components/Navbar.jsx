@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import logo from '../assets/images/growthrick-logo-new.svg';
+import logo from '../assets/images/growthrick-logo-new.png';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
@@ -34,7 +34,7 @@ const Navbar = () => {
           </ul>
         </div>
         
-        <a href="/schedule" className="schedule-btn" onClick={closeMenu}>Schedule Session</a>
+        <a href="https://calendly.com/vamsi-growthrick" target="_blank" rel="noopener noreferrer" className="schedule-btn" onClick={closeMenu}>Schedule Session</a>
         
         <div className="mobile-menu-toggle" onClick={toggleMenu}>
           <span className={`hamburger ${isMenuOpen ? 'active' : ''}`}></span>

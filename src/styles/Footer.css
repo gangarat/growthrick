@@ -16,7 +16,7 @@
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 2.5rem;
 }
 
@@ -25,19 +25,6 @@
   font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  position: relative;
-  padding-bottom: 0.75rem;
-}
-
-.widget-title::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 40px;
-  height: 3px;
-  background: #8b5cf6;
-  border-radius: 3px;
 }
 
 .footer-links {
@@ -82,7 +69,7 @@
 
 /* Newsletter */
 .newsletter-widget {
-  grid-column: span 2;
+  grid-column: span 5;
 }
 
 .newsletter-text {

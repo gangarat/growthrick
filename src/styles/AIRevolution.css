@@ -19,7 +19,7 @@
 
 .section-subtitle {
   font-size: 2rem;
-  color: #1a0f4f;
+  color: #333;
   margin: 0 auto 0.75rem;
   font-weight: 700;
   line-height: 1.2;
@@ -32,22 +32,10 @@
   box-sizing: border-box;
 }
 
-.section-subtitle::after {
-  content: '';
-  position: absolute;
-  width: 100px;
-  height: 5px;
-  background: linear-gradient(90deg, #4f46e5, #7c3aed);
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 4px;
-}
-
 .section-title {
   text-align: center;
   font-size: 1.25rem;
-  color: #4a5568;
+  color: #333;
   margin: 0 auto 1.5rem;
   font-weight: 500;
   line-height: 1.5;
@@ -69,41 +57,96 @@
 }
 
 .ecosystem-card {
-  background: #f8fafc;
+  background: #ffffff;
   border-radius: 10px;
   padding: 1.5rem;
   transition: all 0.2s ease;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #e5e7eb;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
+.advantage-section {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  padding: 2rem 0 0 0;
+  background: none;
+}
+
+.advantage-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a0f4f;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.advantage-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.advantage-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px 0 rgba(80, 56, 180, 0.07), 0 1.5px 4px 0 rgba(80, 56, 180, 0.04);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.advantage-card:hover {
+  box-shadow: 0 4px 16px 0 rgba(80, 56, 180, 0.12), 0 2px 8px 0 rgba(80, 56, 180, 0.07);
+}
+
+.advantage-card .card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #f3e8ff;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 800px) {
+  .advantage-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .ecosystem-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  border-color: #3182ce;
+  border-color: #7E22CE;
 }
 
 .card-icon {
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
+  background-color: #f3e8ff;
+  color: #9333EA;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
-  color: white;
-  font-size: 24px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .ecosystem-card h4 {
+  color: #7E22CE;
   font-size: 1.25rem;
-  color: #2d3748;
-  margin-bottom: 15px;
+  margin-bottom: 0.75rem;
   font-weight: 600;
 }
 
@@ -115,11 +158,10 @@
 }
 
 .advantage-card {
-  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
   border-radius: 12px;
   padding: 2rem;
   margin: 2rem auto 0;
-  color: white;
+  color: #333;
   max-width: 1000px;
   box-shadow: 0 4px 12px rgba(79, 70, 229, 0.15);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -140,7 +182,7 @@
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
   font-weight: 700;
-  color: white;
+  color: #333;
 }
 
 .advantage-text {
