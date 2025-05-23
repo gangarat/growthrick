@@ -1,8 +1,29 @@
 import { Link } from 'react-router-dom';
-import { FaFileAlt, FaTools, FaVideo, FaDownload, FaArrowRight } from 'react-icons/fa';
+import { useState } from 'react';
+import { FaFileAlt, FaTools, FaVideo, FaDownload, FaArrowRight, FaTimes } from 'react-icons/fa';
 import '../styles/Resources.css';
 
 const Resources = () => {
+  const [activeWebinar, setActiveWebinar] = useState(null);
+  
+  // Function to handle whitepaper downloads
+  const handleDownload = (whitepaper) => {
+    // In a real application, this would initiate a download of the PDF
+    // Here, we'll just show an alert to simulate the download
+    alert(`Download started for: ${whitepaper.title}`);
+    // You could also open a new window or redirect to a PDF file
+    // window.open(`/path-to-pdfs/${whitepaper.id}.pdf`, '_blank');
+  };
+  
+  // Function to handle playing webinars
+  const handlePlayWebinar = (webinar) => {
+    setActiveWebinar(webinar);
+  };
+  
+  // Function to close the webinar modal
+  const closeWebinarModal = () => {
+    setActiveWebinar(null);
+  };
   const whitepapers = [
     {
       id: 1,
@@ -136,7 +157,7 @@ const Resources = () => {
                     <span className="resource-type">{whitepaper.type}</span>
                     <span className="resource-pages">{whitepaper.pages} pages</span>
                   </div>
-                  <button className="download-btn">
+                  <button className="download-btn" onClick={() => handleDownload(whitepaper)}>
                     <FaDownload className="download-icon" />
                     Download Whitepaper
                   </button>
@@ -183,7 +204,7 @@ const Resources = () => {
           <div className="webinars-grid">
             {webinars.map(webinar => (
               <div key={webinar.id} className="webinar-card">
-                <div className="webinar-video">
+                <div className="webinar-video" onClick={() => handlePlayWebinar(webinar)}>
                   <div className="play-button">
                     <svg viewBox="0 0 24 24" fill="currentColor">
                       <path d="M8 5v14l11-7z" />
@@ -197,9 +218,9 @@ const Resources = () => {
                   </div>
                   <h3>{webinar.title}</h3>
                   <p className="webinar-description">{webinar.description}</p>
-                  <Link to={webinar.link} className="watch-now">
+                  <button onClick={() => handlePlayWebinar(webinar)} className="watch-now" style={{border: 'none', background: 'none', cursor: 'pointer', textAlign: 'left', padding: 0}}>
                     Watch Now <FaArrowRight className="arrow-icon" />
-                  </Link>
+                  </button>
                 </div>
               </div>
             ))}
@@ -211,15 +232,40 @@ const Resources = () => {
       <section className="resources-cta">
         <div className="container">
           <div className="cta-content">
-            <h2>Ready to Transform Your D2C Marketing?</h2>
+            <h2>Ready to Transform Your Marketing?</h2>
             <p>Discover how Growth Rick's AI-powered platform can help you acquire and retain more customers.</p>
-            <div className="cta-buttons">
-              <Link to="/contact" className="cta-btn primary">Schedule a Demo</Link>
-              <Link to="/pricing" className="cta-btn secondary">View Pricing</Link>
+            <div className="cta-buttons" style={{textAlign: 'center'}}>
+              <Link to="/contact" className="cta-btn primary" style={{margin: '0 auto', display: 'inline-block'}}>Schedule a Demo</Link>
             </div>
           </div>
         </div>
       </section>
+      {/* Webinar Modal */}
+      {activeWebinar && (
+        <div className="webinar-modal" onClick={closeWebinarModal}>
+          <div className="webinar-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="close-modal" onClick={closeWebinarModal}>
+              <FaTimes />
+            </button>
+            <h3>{activeWebinar.title}</h3>
+            <div className="video-container">
+              {/* This would be a real video player in production */}
+              <div className="video-placeholder">
+                <p>Video player would be embedded here.</p>
+                <p>Title: {activeWebinar.title}</p>
+                <p>Duration: {activeWebinar.duration}</p>
+              </div>
+            </div>
+            <div className="webinar-info">
+              <div className="webinar-meta">
+                <span>Recorded: {activeWebinar.date}</span>
+                <span>Duration: {activeWebinar.duration}</span>
+              </div>
+              <p>{activeWebinar.description}</p>
+            </div>
+          </div>
+        </div>
+      )}
     </main>
   );
 };

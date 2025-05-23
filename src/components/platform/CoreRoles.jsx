@@ -50,7 +50,7 @@ const CoreRoles = () => {
         <h2>Core Platform Roles</h2>
         
         <p className="roles-description">
-          Growth Rick's platform is organized around four AI-powered strategic roles that work together to drive B2B customer acquisition:
+          Growth Rick's platform is organized around four AI-powered strategic roles that work together to drive various marketing goals:
         </p>
         
         <div className="roles-grid">

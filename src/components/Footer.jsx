@@ -90,7 +90,7 @@ const Footer = () => {
             {/* Newsletter */}
             <div className="footer-widget newsletter-widget">
               <h3 className="widget-title">Newsletter</h3>
-              <p className="newsletter-text">Subscribe to receive the latest D2C growth insights and AI marketing trends.</p>
+              <p className="newsletter-text">Subscribe to receive the latest growth insights and AI marketing trends.</p>
               
               {isSubscribed ? (
                 <div className="subscription-success">

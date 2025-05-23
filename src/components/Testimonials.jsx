@@ -4,7 +4,7 @@ const Testimonials = () => {
   return (
     <section className="testimonials">
       <div className="container">
-        <h2>What Our Clients Say</h2>
+        <h2 className="text-center" style={{textAlign: 'center', margin: '0 auto 2rem', width: '100%'}}>What Our Clients Say</h2>
         
         <div className="testimonials-grid">
           <div className="testimonial-card">

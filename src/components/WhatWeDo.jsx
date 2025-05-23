@@ -13,7 +13,7 @@ const WhatWeDo = () => {
         </p>
         
         <div className="key-benefits">
-          <h3>Key Benefits</h3>
+          <h2 className="section-title">Key Benefits</h2>
           <div className="benefits-grid">
   <div className="benefit-card">
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '1rem' }}>
@@ -40,7 +40,7 @@ const WhatWeDo = () => {
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '1rem' }}>
       <FiTrendingUp size={40} color="#9333EA" />
     </div>
-    <h4>Scalable Solutions</h4>
+    <h4>Scalable<br />Solutions</h4>
     <p>Expand marketing efforts without expanding headcount</p>
   </div>
 </div>

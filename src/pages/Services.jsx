@@ -6,11 +6,11 @@ const Services = () => {
     {
       id: 'strategic-planning',
       title: 'Strategic Planning',
-      description: 'Data-driven strategies to fuel your D2C brand\'s growth and market positioning',
+      description: 'Data-driven strategies to fuel your brand\'s growth and market positioning',
       items: [
         {
-          title: 'Growth Strategy Development',
-          description: 'We create comprehensive growth roadmaps tailored to your D2C brand\'s unique challenges and opportunities. Our AI-powered analysis identifies the most promising acquisition channels, audience segments, and messaging approaches to drive sustainable growth.'
+          title: 'Growth Strategy',
+          description: 'We create comprehensive growth roadmaps tailored to your brand\'s unique challenges and opportunities by identifying the most promising acquisition channels, audience segments, and messaging approaches.'
         },
         {
           title: 'Brand Positioning',
@@ -86,7 +86,7 @@ const Services = () => {
       <section className="services-hero">
         <div className="container">
           <h1>Our Services</h1>
-          <p className="subtitle">AI-powered marketing solutions designed to accelerate your D2C brand's growth</p>
+          <p className="subtitle">AI-powered marketing solutions designed to accelerate your brand's growth</p>
         </div>
       </section>
 

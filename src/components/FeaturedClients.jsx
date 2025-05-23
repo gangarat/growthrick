@@ -4,7 +4,7 @@ const FeaturedClients = () => {
   return (
     <section className="featured-clients">
       <div className="container">
-        <h2>Trusted by Innovative B2B Brands</h2>
+        <h2 className="section-title text-center" style={{textAlign: 'center', margin: '0 10rem 2rem'}}>Trusted by leading brands</h2>
         
         <div className="clients-grid">
           {/* Placeholder for client logos */}

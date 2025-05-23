@@ -7,7 +7,7 @@ const PlatformOverview = () => {
         <h1>The Growth Rick Platform: AI-Powered Customer Acquisition</h1>
         
         <p className="overview-description">
-          Growth Rick leverages cutting-edge AI to deliver unprecedented results for B2B brands:
+          Growth Rick leverages cutting-edge AI to deliver unprecedented results for brands:
         </p>
         
         <div className="ai-models">
@@ -24,7 +24,7 @@ const PlatformOverview = () => {
             </div>
             
             <div className="model-card">
-              <h3>Grok</h3>
+              <h3>Open AI</h3>
               <p>Provides advanced reasoning and data analysis capabilities</p>
             </div>
             

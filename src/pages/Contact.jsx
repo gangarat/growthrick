@@ -58,10 +58,6 @@ const Contact = () => {
       answer: 'We specialize in working with B2B brands across various industries, including SaaS, technology, professional services, manufacturing, and financial services. Our platform is particularly effective for companies with complex sales cycles and multiple buyer personas.'
     },
     {
-      question: 'What\'s your pricing model?',
-      answer: 'Growth Rick operates on a tiered subscription model based on your company size and marketing needs. Each plan includes access to our AI platform and a dedicated strategy team. We offer flexible plans starting at $3,500/month, with enterprise solutions available for larger brands.'
-    },
-    {
       question: 'How quickly can we expect to see results?',
       answer: 'While every business is different, most of our clients begin seeing significant improvements in key metrics within the first 30-60 days. Our platform continually learns and optimizes based on performance data, so results typically improve over time.'
     },
@@ -76,7 +72,7 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="contact-hero">
         <div className="container">
-          <h1>Ready to Accelerate Your D2C Growth?</h1>
+          <h1>Ready to Accelerate Your Growth?</h1>
           <p className="subtitle">Fill out the form below to schedule a free strategy session.</p>
         </div>
       </section>
@@ -231,7 +227,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3>Email</h3>
-                  <a href="mailto:growth@growthrick.ai">growth@growthrick.ai</a>
+                  <a href="mailto:vamsi@growthrick.com">vamsi@growthrick.com</a>
                 </div>
               </div>
               
@@ -241,7 +237,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3>Phone</h3>
-                  <a href="tel:16505557428">(650) 555-7428</a>
+                  <a href="tel:+919916622611">+91 99166 22611</a>
                 </div>
               </div>
               
@@ -251,15 +247,11 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3>Address</h3>
-                  <p>548 Market St, San Francisco, CA 94104</p>
+                  <p>ECC Road, Whitefield, Bengaluru - 560066</p>
                 </div>
               </div>
 
-              <div className="office-hours">
-                <h3>Office Hours</h3>
-                <p>Monday - Friday: 9:00 AM - 6:00 PM PST</p>
-                <p>Saturday - Sunday: Closed</p>
-              </div>
+
             </div>
           </div>
         </div>
