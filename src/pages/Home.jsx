@@ -6,7 +6,6 @@ import OurApproach from '../components/OurApproach';
 import Results from '../components/Results';
 import FeaturedClients from '../components/FeaturedClients';
 import Testimonials from '../components/Testimonials';
-import Leadership from '../components/Leadership';
 import CTA from '../components/CTA';
 
 const Home = () => {
@@ -20,7 +19,6 @@ const Home = () => {
       <Results />
       <FeaturedClients />
       <Testimonials />
-      <Leadership />
       <CTA />
     </>
   );

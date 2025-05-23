@@ -26,7 +26,7 @@ html, body {
   font-family: 'Inter', sans-serif;
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
-  text-align: center;
+  text-align: left;
 }
 
 body {
@@ -35,14 +35,12 @@ body {
   min-width: 320px;
   line-height: 1.6;
   background: #fff;
-  text-align: center;
 }
 
 h1 {
   font-size: 2.8rem;
   line-height: 1.2;
   margin: 0 auto 1rem;
-  text-align: center;
   width: 100%;
   max-width: 1000px;
   padding: 0 1.25rem;
@@ -50,7 +48,6 @@ h1 {
 }
 
 h2 {
-  text-align: center;
   margin: 0 auto 1.5rem;
   font-weight: 600;
   color: rgb(31 41 55 / var(--tw-text-opacity));
@@ -92,4 +89,44 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* Text alignment utility classes */
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* Section and content styling */
+.section-title {
+  text-align: center;
+}
+
+.content-block {
+  text-align: justify;
+  max-width: 80ch;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Improve paragraph spacing */
+p {
+  margin-bottom: 1rem;
+}
+
+/* Heading spacing */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }

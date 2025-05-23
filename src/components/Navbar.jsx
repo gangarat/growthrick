@@ -34,7 +34,7 @@ const Navbar = () => {
           </ul>
         </div>
         
-        <a href="https://calendly.com/vamsi-growthrick" target="_blank" rel="noopener noreferrer" className="schedule-btn" onClick={closeMenu}>Schedule Session</a>
+        <a href="https://outlook.office365.com/owa/calendar/GrowthRickConsultation@growthrick.com/bookings/" target="_blank" rel="noopener noreferrer" className="schedule-btn" onClick={closeMenu}>Schedule Session</a>
         
         <div className="mobile-menu-toggle" onClick={toggleMenu}>
           <span className={`hamburger ${isMenuOpen ? 'active' : ''}`}></span>

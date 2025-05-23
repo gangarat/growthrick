@@ -1,7 +1,6 @@
 .what-we-do {
   padding: 3rem 1.25rem;
   background-color: #f9f9f9;
-  text-align: center;
 }
 
 .what-we-do h2 {
@@ -46,6 +45,16 @@
   color: #555;
   max-width: 800px;
   margin: 0 auto 3rem;
+}
+
+.text-justify.section-description {
+  text-align: justify;
+}
+
+.what-we-do .content-block {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  text-align: justify;
 }
 
 .key-benefits {

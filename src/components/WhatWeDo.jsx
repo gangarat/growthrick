@@ -5,10 +5,10 @@ const WhatWeDo = () => {
   return (
     <section className="what-we-do">
       <div className="container">
-        <h2 className="what-we-do-title">What We Do</h2>
-        <p className="section-description" style={{ textAlign: 'center' }}>
-          At Growth Rick, we're revolutionizing how B2B brands approach customer
-          acquisition. Our AI-powered platform harnesses 26 specialized marketing agents to
+        <h2 className="section-title what-we-do-title">What We Do</h2>
+        <p className="section-description text-justify content-block">
+          At Growth Rick, we're revolutionizing how brands approach customer acquisition, branding and retention.
+          Our AI-powered platform harnesses 50 specialized marketing agents to
           deliver hyper-personalized, data-driven campaigns that drive measurable results.
         </p>
         

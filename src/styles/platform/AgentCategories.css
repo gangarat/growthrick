@@ -51,6 +51,11 @@
   font-size: 1.75rem;
 }
 
+.category-content p {
+  text-align: justify;
+}
+
+
 .agents-grid {
   --grid-columns: 2; /* Default to 2 columns */
   display: grid;
@@ -98,6 +103,7 @@
   font-size: 0.95rem;
   line-height: 1.5;
   margin: 0;
+  text-align: justify;
 }
 
 /* Responsive Design */
